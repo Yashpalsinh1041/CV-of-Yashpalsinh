@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Resume - Yashpalsinh Vaghela</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body {
+    background: #eef1f6;
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Resume Container */
+.resume {
+    max-width: 950px;
+    margin: 40px auto;
+    display: flex;
+    background: white;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.2);
+}
+
+/* Left Section */
+.left {
+    width: 35%;
+    background: #0f172a;
+    color: white;
+    padding: 25px;
+}
+.left img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+    border: 4px solid white;
+}
+.profile h2 {
+    text-align: center;
+    font-size: 22px;
+    margin-top: 15px;
+}
+
+.section {
+    margin-top: 25px;
+}
+.section h3 {
+    border-bottom: 1px solid #666;
+    padding-bottom: 5px;
+}
+.section p, li {
+    font-size: 14px;
+}
+
+/* Right Section */
+.right {
+    width: 65%;
+    padding: 30px;
+}
+.right h2 {
+    color: #0f172a;
+}
+.block {
+    margin-bottom: 18px;
+}
+.block h4 {
+    color: #1e3a8a;
+    margin-bottom: 5px;
+}
+
+/* Button */
+button {
+    background: #2563eb;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background: #1e40af;
+}
+
+a { color: #93c5fd; }
+
+@media(max-width: 750px){
+    .resume { flex-direction: column; }
+    .left, .right { width: 100%; }
+}
+</style>
+</head>
+
+<body>
+
+<div class="resume">
+
+<!-- LEFT PANEL -->
+<div class="left">
+    <img src="Yashpalsinh.jpg" alt="Photo">
+
+    <div class="profile">
+        <h2>Yashpalsinh Vaghela</h2>
+        <p style="text-align:center;">B.E. Information Technology</p>
+    </div>
+
+    <div class="section">
+        <h3>Contact</h3>
+        <p>📞 8490951041</p>
+        <p>📧 yvaghela282@gmail.com</p>
+        <p>📍 Dholka, Ahmedabad</p>
+        <p>🔗 <a href="https://www.linkedin.com/in/yashpalsinh-vaghela-3a195a29a" target="_blank">LinkedIn Profile</a></p>
+    </div>
+
+    <div class="section">
+        <h3>Skills</h3>
+        <ul>
+            <li>HTML, CSS, JavaScript</li>
+            <li>Basic Java Programming</li>
+            <li>Microsoft Office</li>
+            <li>Problem Solving</li>
+            <li>Communication Skills</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h3>Languages</h3>
+        <p>English, Hindi, Gujarati</p>
+    </div>
+</div>
+
+<!-- RIGHT PANEL -->
+<div class="right">
+
+<h2>Career Objective</h2>
+<p id="objective">
+A dedicated and enthusiastic B.E. Information Technology student seeking opportunities to enhance technical skills, gain real-world experience, and contribute to organizational success.
+</p>
+<button onclick="editObjective()">Edit Objective</button>
+
+<div class="block">
+    <h4>Education</h4>
+    <p><b>Degree:</b> B.E. Information Technology (Pursuing)</p>
+    <p><b>College:</b> Government Engineering College, Sector-28, Gandhinagar</p>
+    <p><b>Qualification:</b> 12th Pass</p>
+</div>
+
+<div class="block">
+    <h4>Projects</h4>
+    <p>• Personal Resume Website</p>
+    <p>• Student Management System (Basic)</p>
+</div>
+
+<div class="block">
+    <h4>Experience</h4>
+    <p>Fresher</p>
+</div>
+
+<div class="block">
+    <h4>Strengths</h4>
+    <p>Quick learner, teamwork, positive attitude, adaptability</p>
+</div>
+
+<div class="block">
+    <h4>Declaration</h4>
+    <p>I hereby declare that all the above information is true and correct to the best of my knowledge.</p>
+</div>
+
+</div>
+
+</div>
+
+<script>
+function editObjective(){
+    let newText = prompt("Enter your new Career Objective:");
+    if(newText){
+        document.getElementById("objective").innerText = newText;
+    }
+}
+</script>
+
+</body>
+</html>
